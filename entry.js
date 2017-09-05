@@ -1,4 +1,4 @@
- document.write(require("./content.js"));
+ document.write(require("./modules/content.js"));
 
 let ime = 'nikola',
     godine = 26;
