@@ -5,8 +5,8 @@
   "main": "entry.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --progress --color --open",
-    "production": "webpack"
+    "dev": "./node_modules/.bin/webpack-dev-server --progress --color --open",
+    "build": "./node_modules/.bin/webpack"
   },
   "author": "Nikola Mitic",
   "license": "ISC",
@@ -15,6 +15,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
     "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1",
     "webpack-livereload-plugin": "^0.11.0"
   }
 }
