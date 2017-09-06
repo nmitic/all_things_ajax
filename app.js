@@ -1,6 +1,16 @@
- document.write(require("./modules/content.js"));
+import vanillaAjax from './modules/vanilla-ajax.js';
+import apies from './apies.js';
 
-let ime = 'nikola',
-    godine = 26;
+vanillaAjax('GET', apies.randomChuck, (data) => {
+  console.log(data);
 
-console.log(`Moje ime je ${ime} i imam ${godine} godina!`)
+  vanillaAjax('GET', apies.dogs, (data) => {
+    console.log(data);
+
+    vanillaAjax('GET', apies.questions, (data) => {
+      console.log(data);
+    })
+
+  })
+
+});
