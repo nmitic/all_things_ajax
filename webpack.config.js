@@ -1,7 +1,7 @@
 let LiveReloadPlugin = require('webpack-livereload-plugin');
 
 module.exports = {
-    entry: "./app.js",
+    entry: ['babel-polyfill', './app.js'],
     output: {
         path: __dirname,
         filename: "dist/bundle.js"
