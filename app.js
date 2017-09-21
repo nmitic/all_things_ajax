@@ -1,5 +1,6 @@
 import vanillaAjax from './modules/vanilla-ajax.js';
 import promiseAjax from './modules/promise-ajax.js';
+import promiseCuteExample from './modules/cutePromiseExample.js';
 import apies from './apies.js';
 
 // AJAX THE OLD WAY
@@ -31,7 +32,7 @@ promiseAjax('GET', apies.randomChuck).then((data) => {
   console.log(error);
 })
 
-//AJAX THE MORE BETTER WAY - if we have to wait for all of them to be finished
+//AJAX THE MORE BETTER WAY - if we have to wait for all of them to be finished, doing stuff in paraller
 Promise.all([
   promiseAjax('GET', apies.randomChuck),
   promiseAjax('GET', apies.dogs),
@@ -41,3 +42,5 @@ Promise.all([
 }).catch((error) => {
   console.log(error);
 })
+
+promiseCuteExample();

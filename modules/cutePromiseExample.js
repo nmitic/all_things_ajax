@@ -54,14 +54,14 @@ var liveLife = () => {
         Let your voice be heard and spread the love
         and help others do the same!
       */
-      alert(happinessFound);
+      console.log(happinessFound);
     })
     .catch((happinessNotFound) => {
     /*
       Let your voice be heard and spread the love
       so that the other can help you!
     */
-    	alert(happinessNotFound);
+    	console.log(happinessNotFound);
     })
 }
 
@@ -69,4 +69,6 @@ var liveLife = () => {
   Go out there and make mistakes and remeber world is not model
   around true and false, only I'm. You can have it all! The program.
 */
-liveLife();
+//liveLife();
+
+module.exports = liveLife;
